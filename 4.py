@@ -1,0 +1,18 @@
+# Найти сумму n элементов следующего ряда чисел: 1 -0.5 0.25 -0.125
+# ...Количество элементов (n) вводится с клавиатуры.
+#
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=a2_4.xml#R7Vpbb9s2FP41ApICGSTKsuxH20m2hw0olgFLHxmLltVSokfRtdNfv0OKupJKlcZWUjR5IMjDQ5H8zp2O46%2FS4%2B8c77Z%2FsYhQB7nR0fGvHYTmgQutJDwWhGA%2BKwgxT6KC5NWEu%2BQb0US9Lt4nEclbjIIxKpJdm7hmWUbWokXDnLNDm23DaHvXHY6JQbhbY2pS%2F00isS2oMxTW9D9IEm%2FLnb3pvJh5wOsvMWf7TO%2FnIH%2Bj%2ForpFJff0hfNtzhihwbJv3H8FWdMFL30uCJUQlvCVqy77Zmtzs1JJoYs0BfKxWN5dRIBEnrIuNiymGWY3tTUpboekR9wYbQVKYWuB11yTMS9JP8W6NGnciaLFlIsMFxTnOfJuiDeJrRc%2FJkI8ag1Ae8FA1K9%2FZ%2BM7TRfcWB5yt4ra1LO9nytuZBWIsxjormmFdygxYSlRPBHYOGEYpF8bX8da32KK74aU%2BhoWO0Q662%2FYrrXH3UAuPm1bJeuA5eahWUf2qVqb0y5UAraL%2FE%2FbBNB7nZY3e0A9teWgt6OcEGOT0NkXr5cUKqnNt8wBIkqwqG2hopp27CEiftywPyxdBLOdd8cfKr4hipjhPOt2rWj5BnLSEvD3X7NbarpxFRTNFh4gzVXLYWj4scGw44lmcgbX%2F4oCbVOoLCtE0GgdeJ24IJ52F4AneIMtVJUlxmkJxPTsLqKA%2B51J7uAnkgw%2FRtiBc5iOsCKHpgQLNUDrhVc9oUSvttl2YCcV4wyXksfdFIkWbwCuREuFe2qUC7OBMiJZUCZu6cx2C7WE5vB%2BhZ79YKX22tgyGFzcbx00JQKiRKHXiyqezakA%2FcVJ%2FddaBa0oUAWKEILFP4JXNd8ZNelpyrn9RZC7dT0YbORQq03OQf%2BXgP9BuD3FeCt0PEW8ffQSAKYGq7gCEPZkwPXM8TDtyx92OfjZDWTtpP0pq7hGGYWxzA7gWOYGcBwIvY8s4LymqleddsxMr2y3OvmxhOdD38%2FYOSCsy%2BkE3gtsRjTJJYBd62CMRAkaAkUfAs9kSZR1JsXtF3EKVD3OqgHJuoTC%2BjoFKAH70FKe8SOl%2FTHClOWklBnSztOynQpl4pZOE%2FkXpUM%2BQ5nJYcnpzUd9mxOffgAcxfK%2BaJlg62z3Lr2skFvnMf03S2dOL%2BrqlxT6b9trmp6LlflD5GZDebK0ffAreUsBQZ5c5%2Bg%2ByTlyhvY5Yt6Vg0U75hRCKrJ70ahKlqcXLRm1tJ4oQnUC41ZWpqxiJM8%2BYYfFIO0CF1RA3ewdIJrGYXAj%2BWFS%2FMaQYmSjbCEJFVpSomuoYr8Rzm8q8mJ8PY7phT648Wf9yJJAm6JP6OVSeFTCv82nySn7g8%2FSaKXI4ZM%2B%2F8FdXZm6mzjR4sz66xZQSmdVe0SaQ2VLbjIhfn4lA14j2q8FmJKCWUxx6l05IQncGBZN7TnPtYTr2ACXjAf81keneVx5SezgRLclg2MVTcgS7lsqRvIf1XZAJlH8RZrTRA3UCH3pqXHnkXJE6msNf3FWUx6%2BC%2Bek%2BzaeB206j9Npkqf52TTkKS9zdIn6L7S%2BDbTt75encT0p%2B%2BmX%2F0u2TL9YCzTt5SfOvxBsrYcGAStJgTsC099xldLV43WldYlp4r2Vn%2B7mgqVtwmva4cTLp9hvvk%2BfQb3Bex1qTZ7csnPG%2BC7Vu5741q5%2BUOe0rFFQ6%2BaNbHFKbxiQeDPz5kNwbD%2Bp5zit%2Br6H5%2F8m%2F8B
+
+n = int(input("Введите число: "))
+
+
+def f(x):
+    if x == 1:
+        return 1
+
+    sign = -1 ** (x + 1)
+    return sign * f(x-1) / 2
+
+
+seq = [f(x) for x in range(1, n+1)]
+print(f"Сумма ряда {seq} = {sum(seq)}")

@@ -1,0 +1,10 @@
+# Среди натуральных чисел, которые были введены, найти наибольшее по сумме цифр.
+# Вывести на экран это число и сумму его цифр.
+#
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=a2_9.xml#R7VhNc5swEP01zDSXDCDjj6OxnfbQznQmhzZHGRRQKxARIsb99V2BZMDg1G5rO53UB1l6u1ppV28XhIUWSfle4Cz%2BxEPCLNcOSwstLdedeTa0CtjWgOehGogEDWvIaYB7%2BoNoUM%2BLChqSvKMoOWeSZl0w4GlKAtnBsBB801V75Ky7aoYj0gPuA8z66BcayrhGp%2B6kwT8QGsVmZWc8qyVrHHyPBC9SvZ7losfqV4sTbGxpR%2FMYh3zTgtDKQgvBuax7SbkgTIXWhK2ed3dAutu3IKk8ZsJYb0NujeskhEjoIRcy5hFPMVs1qF%2B5R5QBG0axTBh0HeiSksqvCr719OjBSFIpti2RGj5oAyQN5%2BrIYBgwnOc0qME7yozhb0TKrWYJLiQHqNnaR84zrVc7ozw4GA4N5bwQgdZyNcGwiIjWQrujAIYTnhDYL6gIwrCkz13rWHMt2uk18YaODvlw%2BPXSz5gVxBBmjBPwx0%2FXufqzIEazpWp92wInpxPTh7aS%2Bqv%2BGTIGmaLOahNTSe4zXPm6gVztnphenghJypdD1g%2BGnoAMlXWqj%2FRw0%2BSNY1TiVs4YvT8J3%2BRS7L0yQ1GfoaMLMRT1GaoYWbW%2Bq%2Fmn2pGF5kBeBvvz1wJ6kerl5KkP9k4NqmCmuhAGzBhhPBI4AcWMCAo7JmJf9rkRXIHiOz5fguPTN8LxUZ%2Fj3oU4PhqqwhVn8wynHSrbldw2crDcVhmalgAhj9d%2Bd4Iuw8k6xKftpqyy9HXsnwIbjte23MWJrt6c0zqw4TbPGJWneAz%2FTwXfrdcMjrZw8yunXqiy3apw%2FrK5K3%2B6bLp2v2y60zOVTXOTeNNvtl6%2Fps4uVFO942pqkeSvq6jCjs5cNv6hDEb2XgZPB158xufKYPd%2FBruzfgY7B87sr6fw7OCrP1xD%2FSMvAINZo8wsWvfYeWXSqfrTql10b7kgrZH2TfhOpZ6eCC1qTTTT65edySlP2ASXp5QWVcFurMny95P6lV9%2B9p%2FiaHzJp7gzzMF5i3c1JbyKAwOfs675KeSM30Jg2HwlrGStL7Fo9RM%3D
+
+seq = input("Введите числа через запятую: ")
+seq = map(lambda x: map(int, x), seq.split(","))
+sums = map(sum, seq)
+
+print(f"Максимальная сумма: {max(sums)}")

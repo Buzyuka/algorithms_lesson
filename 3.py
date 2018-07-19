@@ -1,0 +1,8 @@
+# Сформировать из введенного числа обратное по порядку входящих в
+# него цифр и вывести на экран. Например, если введено число 3486,
+# то надо вывести число 6843.
+#
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=a2_3.xml#R7VdNj5swEP01HFsFCPk4hiTbHlqp0h7aPVVemAW3BiNjNkl%2Ffcd4CHghaqt2s1LbHCzPm%2FHYM34PiBdui%2BMbxar8vUxBeMEsPXrhzguCdTTD0QAnC0TrlQUyxVML%2BT1wy78BgbQua3gKtROopRSaVy6YyLKERDsYU0oe3LAHKdxdK5bBCLhNmBijH3mqc4uugmWPvwWe5d3O%2FmJtPfcs%2BZop2ZS0nxeED%2B3PugvW5aJC65yl8jCAwr0XbpWU2s6K4xaEaW3XNrvu5oL3fG4Fpf6ZBQEdQ5%2B60iHFTpAplc5lJksm9j0at%2BWBSTBDK9eFwKmPUzhy%2FcnAryOy7jpPqdVp4DLmHSWAMt2YK0MzEayueWLBGy66xF9A6xOxhDVaItQf7Z2UFcXZYkwFTjtq2aiEoJDYxFQG1KH5uGn%2B%2BSqQ4SALwPNiiALBNH90szPiWnaO6%2FuNE2r5dPvpNI9MNJTUw56sd2aMZx4WtVp2cxzjdtyP70wIVIa5m0PONdxWrC33gNp0b4i2A6XheJExF4qnBcGKqEvSnpN56HXid%2BzOBxrp4n6nXYt%2Fga2jq3AJPB8TOLoSW%2BfTbG3HOCBumnHuhRsvWAg8X3yvcJbptl6L1BUrO4yXVaM%2Fp0yzzouHGAZMpXnCAXyGVmaKjWNCgJCZYgUGVqA41gjqqe9D73gBwZzVcQ3FrP4rxsrDVczySoqJLioGn%2Bzxn9FNFJtV4ebVDxQ0xPxfiPWi3d%2BrzYWrzWA2oc3FM2lzOU2OzYAQ9kMgauky8fJ7wdf%2B2X6Gpxia%2FRdw6xv8ywj33wE%3D
+
+input_data = input("Введите число: ")
+print(input_data[::-1])
