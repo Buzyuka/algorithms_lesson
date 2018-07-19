@@ -1,0 +1,13 @@
+# Посчитать, сколько раз встречается определенная цифра в введенной
+# последовательности чисел. Количество вводимых чисел и цифра, которую
+# необходимо посчитать, задаются вводом с клавиатуры.
+#
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=a2_8.xml#R7VhLb9swDP41BppL4chJnBzrNt0OGzCgh61H1VZtbbLlynKT7NePsig%2F6vSRbU0HrD2o4keKoih%2BjBIvOM%2B3HxQts88yYcIjfrL1gguPkNXch9EAOwvM54EFUsUTC0074Ir%2FZAjiurTmCasGhlpKoXk5BGNZFCzWA4wqJTdDs1sphruWNGUj4CqmYox%2B5YnOLLokYYd%2FZDzN3M7Txcpqbmj8I1WyLnA%2FjwS3zZ9V59T5woNWGU3kpgcFay84V1JqO8u350yY1Lq02XWXj2jbuBUr9EsWzDEMvXNHZwlkAkWpdCZTWVCx7tCoOR4zDnyQMp0LmE5hyrZcfzPw6Ryla6cptNr1VEa8RgesSM7MlYEYC1pVPLbgJRfO8Xem9Q6rhNZaAtSF9knKEu3sYcwJHk0HQpWsVYxWBAuMqpShVdBeBVQ4kzmDeMFEMUE1vx96p1hraWvX5RsmmPL96cet76mo0akHOVldmDHyPTjUMnRzGKNmXI%2FvTAhghrmbTcY1uyppc7YNcHN4Q7gdU5ptn07R%2BPC4gCyxdJHaMxQ3HU%2BmrrqzHkec3Z%2Bka%2FFerSQYV%2BvsSNUa7K%2FWZowI1qYZZ15w5pGFgPiiGwWz1MwqducR2MQv6nysHV0ttMbSTCEfVAgmZKpoDoYlUxxCZ%2Bqh7kuneAMetEV%2FDCIs34lgq35IhPBIRJiNiYD1XJW0GNS73%2Bh9pwfPfZN9ywSv9AHmJwfY5sCD1%2FHMi0Nitm3ggAWQytOqFFwfEhP8v6tlu18nvNjDZDJ5xvqJ%2FjXk2xEa0mzYkIg%2Fbkgt9rcbknu4%2F9cdKRx3pNWROlL46EczPCGjF35A7yWRcXPWW2qdLd3bFMZpMw5fAcDuMDKf82HT%2FayK%2BM4exMueH4vYXeZNaGa5IX0MJaJPwNGk8fS7XPzH3xLTxQPqLsfUDRavRN3V%2FtLp3%2FkF3oy5qz1v8Df89tFm5RVeXSB2X8QbXe%2FHjmD9Cw%3D%3D
+
+seq = input("Введите последовательность чисел через запятую: ")
+num = input("Введите число: ")
+
+seq = list(map(int, seq.split(",")))
+num = int(num)
+
+print(f"Количство {num} в списке: {seq.count(num)}")
