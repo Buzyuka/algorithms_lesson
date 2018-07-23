@@ -2,13 +2,10 @@
 # минимальным и максимальным элементами. Сами минимальный и максимальный
 # элементы в сумму не включать.
 
-import random
 from functools import reduce
 
-n = 10
-
-lst = list(map(lambda _: random.randint(0, n), range(0, n)))
-print(lst)
+lst = input("Введите список через запятую: ")
+lst = map(int, lst.split(","))
 
 enumerated = list(enumerate(lst))
 
