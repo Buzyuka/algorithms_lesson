@@ -68,7 +68,7 @@ def _mul_hex_with_register(hex_, register):
         accumulators[j] = 0
         accumulate(j)
 
-    for j in [3, 4, 5]:
+    for j in range(len(hex_), registers_len * 3 + 1):
         values[j] += accumulators[j]
         accumulators[j] = 0
 
